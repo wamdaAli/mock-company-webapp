@@ -10,7 +10,7 @@ pipeline {
       steps{
         // Checkout your source code from version control if needed
         // For example, you can use 'git checkout' here
-        'git checkout'
+        checkout scm
         
       }
     }
@@ -33,10 +33,10 @@ pipeline {
    }
 
 
-  post{
-    always{
+  //post{
+    //always{
       //perform cleanup / post-build actions here 
-    }
-  }
+    //}
+  //}
   
 }
