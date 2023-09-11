@@ -32,10 +32,11 @@ pipeline {
       
    }
 
-  //post{
-    //always{
-      //perform cleanup / post-build actions here 
-    //}
-  //}
+  post {
+    always {
+      archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
+      junit 'build/reports/**/*.xml'
+    }
+  }
   
 }
