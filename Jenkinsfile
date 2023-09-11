@@ -28,8 +28,10 @@ pipeline {
         sh './gradlew test'
       }
     }
+ 
+  }
+  
+}
 
-      
-   }
 
 
