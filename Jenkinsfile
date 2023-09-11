@@ -29,13 +29,13 @@ pipeline {
       }
     }
 
-    // add more stages   
+      
    }
 
-  post{
-    always{
+  //post{
+    //always{
       //perform cleanup / post-build actions here 
-    }
-  }
+    //}
+  //}
   
 }
